@@ -89,67 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
       const projects = [
-    {
-      title: "معرض عطور",
-      titleEnglish: "Perfume exhibition",
-      images: ["imgs/img1.jpg", "imgs/img2.jpg", "imgs/img3.jpg", "imgs/img4.jpg","imgs/img5.jpg","imgs/img6.jpg"]
-    },
-    {
-      title: "معرض عطور",
-      titleEnglish: "Perfume exhibition",
-      images: ["imgs/img7.jpg", "imgs/img8.jpg", "imgs/img9.jpg", "imgs/img10.jpg"]
-    },
-    {
-      title: "بوث طبي لشركة جمجوم",
-      titleEnglish: "Jamjoom Company's medical booth",
-      images: ["imgs/img11.jpg", "imgs/img12.jpg"]
-    },
-    {
-      title: "بوث طبي لشركة Sanofi",
-      titleEnglish: "Sanofi Company's medical booth",
-      images: ["imgs/img16.jpg", "imgs/img13.jpg", "imgs/img15.jpg", "imgs/img14.jpg"]
-    },
-    {
-      title: "استندات خشب وصبغ نارى واستيكر لشركة الاصناف التجاريه",
-      titleEnglish: "Fire-painted wood stands, sticker, for the Commercial Items Company",
-      images: ["imgs/img17.jpg", "imgs/img18.jpg", "imgs/img19.jpg", "imgs/img20.jpg", "imgs/img21.jpg", "imgs/img22.jpg", "imgs/img23.jpg", "imgs/img24.jpg", "imgs/img25.jpg", "imgs/img26.jpg"]
-    },
-     {
-      title: "عصير الضاحية",
-      titleEnglish: "Aasir Aldaahia",
-      images: ["imgs/img27.jpg", "imgs/img28.jpg", "imgs/img29.jpg", "imgs/img30.jpg"]
-    },
-     {
-      title: "كارى ودروبس",
-      titleEnglish: "Cari",
-      images: ["imgs/img31.jpg", "imgs/img32.jpg", "imgs/img33.jpg", "imgs/img34.jpg", "imgs/img35.jpg", "imgs/img36.jpg", "imgs/img37.jpg"]
-    },
-     {
-      title: " بوث لشركة سدره للعطور في الافنيوز",
-      titleEnglish: "Sedrah Perfumes Booth in The Avenues",
-      images: ["imgs/img38.jpg", "imgs/img39.jpg", "imgs/img40.jpg", "imgs/img41.jpg", "imgs/img42.jpg", "imgs/img43.jpg", "imgs/img44.jpg", "imgs/img45.jpg"]
-    },
-     {
-      title: "مداخل في الافنيوز وخيران مول",
-      titleEnglish: "Entrances to Avenues and Khiran Mall",
-      images: ["imgs/img46.jpg", "imgs/img47.jpg", "imgs/img48.jpg", "imgs/img49.jpg", "imgs/img50.jpg", "imgs/img51.jpg", "imgs/img52.jpg", "imgs/img53.jpg", "imgs/img54.jpg", "imgs/img55.jpg", "imgs/img56.jpg"]
-    },
-     {
-      title: "استاند وياي فك وتركيب",
-      titleEnglish: "Astand Weyay fak W tarkib",
-      images: ["imgs/img57.jpg", "imgs/img58.jpg", "imgs/img59.jpg", "imgs/img60.jpg", "imgs/img61.jpg", "imgs/img62.jpg"]
-    },
-     {
-      title: "حفله عيد الام الجيت مول ",
-      titleEnglish: "Mother's Day Party",
-      images: ["imgs/img63.jpg", "imgs/img64.jpg", "imgs/img65.jpg", "imgs/img66.jpg", "imgs/img67.jpg"]
-    },
-     {
+      {
       title: "تشطيب محل دسمان للعطور بالجهراء المنار مول",
       titleEnglish: "Finishing of Dasman Perfumes store in Jahra, Al Manar Mall",
       images: ["imgs/img68.jpg", "imgs/img69.jpg", "imgs/img70.jpg", "imgs/img71.jpg"]
     },
-     {
+      {
       title: "تنفيذ استوديو صباح الخير  ياكويت بوزارة الاعلام",
       titleEnglish: "Implementation of the Good Morning Kuwait Studio at the Ministry of Information",
       images: ["imgs/img72.jpg", "imgs/img73.jpg", "imgs/img74.jpg", "imgs/img75.jpg", "imgs/img76.jpg", "imgs/img77.jpg", "imgs/img78.jpg", "imgs/img79.jpg", "imgs/img80.jpg"]
@@ -160,49 +105,121 @@ document.addEventListener('DOMContentLoaded', function() {
       images: ["imgs/img81.jpg", "imgs/img82.jpg", "imgs/img83.jpg", "imgs/img84.jpg", "imgs/img85.jpg", "imgs/img86.jpg","imgs/img91.jpg"]
     },
      {
-      title: "تشطيب  حضانه  بالجابريه",
-      titleEnglish: "Finishing a nursery in Jabriya",
-      images: ["imgs/img87.jpg", "imgs/img88.jpg", "imgs/img89.jpg", "imgs/img90.jpg", "imgs/img92.jpg", "imgs/img93.jpg","imgs/img94.jpg","imgs/img95.jpg","imgs/img96.jpg","imgs/img97.jpg"]
+      title: "حفله عيد الام الجيت مول ",
+      titleEnglish: "Mother's Day Party",
+      images: ["imgs/img63.jpg", "imgs/img64.jpg", "imgs/img65.jpg", "imgs/img66.jpg", "imgs/img67.jpg"]
     },
      {
+      title: " تنفيذ احتفالية روح السعوديه في فندق الفور سيزون ",
+      titleEnglish: "Implementing the Saudi Spirit celebration at the Four Seasons Hotel",
+      images: ["imgs/img200.jpg","imgs/img201.jpg","imgs/img202.jpg","imgs/img203.jpg","imgs/img204.jpg","imgs/img205.jpg","imgs/img206.jpg","imgs/img207.jpg","imgs/img208.jpg","imgs/img209.jpg"]
+    },
+    {
       title: "تشطيب  جناح  في قسيمه باابو فطيره",
       titleEnglish: "Finishing a suite in the Babo Fatira plot",
       images: ["imgs/img98.jpg", "imgs/img99.jpg", "imgs/img100.jpg", "imgs/img101.jpg", "imgs/img102.jpg", "imgs/img103.jpg","imgs/img104.jpg","imgs/img105.jpg"]
     },
      {
-      title: "تنفيذ وتشطيب محل لشركه مودش للملابس الجاهزه بجمعيه الصديق",
-      titleEnglish: "Implementation and finishing of a store for Modish Readymade Clothes Company in Al-Siddiq Association",
-      images: ["imgs/img106.jpg", "imgs/img107.jpg", "imgs/img108.jpg", "imgs/img109.jpg", "imgs/img110.jpg", "imgs/img111.jpg","imgs/img112.jpg","imgs/img113.jpg","imgs/img114.jpg","imgs/img115.jpg"]
+      title: "تشطيب جناح بالوفرة ",
+      titleEnglish: "Finishing a suite in Al Wafra",
+      images: ["imgs/img138.jpg","imgs/img139.jpg","imgs/img140.jpg","imgs/img141.jpg","imgs/img142.jpg","imgs/img143.jpg","imgs/img144.jpg","imgs/img145.jpg","imgs/img146.jpg"]
     },
-     {
+      {
+      title: "بوث طبي لشركة Sanofi",
+      titleEnglish: "Sanofi Company's medical booth",
+      images: ["imgs/img16.jpg", "imgs/img13.jpg", "imgs/img15.jpg", "imgs/img14.jpg"]
+    },
+    {
+      title: "معرض عطور",
+      titleEnglish: "Perfume exhibition",
+      images: ["imgs/img1.jpg", "imgs/img2.jpg", "imgs/img3.jpg", "imgs/img4.jpg","imgs/img5.jpg","imgs/img6.jpg"]
+    },
+      {
+      title: "استندات خشب وصبغ نارى واستيكر لشركة الاصناف التجاريه",
+      titleEnglish: "Fire-painted wood stands, sticker, for the Commercial Items Company",
+      images: ["imgs/img17.jpg", "imgs/img18.jpg", "imgs/img19.jpg", "imgs/img20.jpg", "imgs/img21.jpg", "imgs/img22.jpg", "imgs/img23.jpg", "imgs/img24.jpg", "imgs/img25.jpg", "imgs/img26.jpg"]
+    },
+      {
+      title: " بوث لشركة سدره للعطور في الافنيوز",
+      titleEnglish: "Sedrah Perfumes Booth in The Avenues",
+      images: ["imgs/img38.jpg", "imgs/img39.jpg", "imgs/img40.jpg", "imgs/img41.jpg", "imgs/img42.jpg", "imgs/img43.jpg", "imgs/img44.jpg", "imgs/img45.jpg"]
+    },
+      {
       title: "تنفيذ وتشطيب محل لشركه مودش للملابس الجاهزه بمول 360",
       titleEnglish: "Implementation and finishing of a store for Modish Readymade Clothes Company in 360 Mall",
       images: ["imgs/img116.jpg","imgs/img117.jpg","imgs/img118.jpg","imgs/img119.jpg","imgs/img120.jpg","imgs/img106.jpg","imgs/img107.jpg", "imgs/img108.jpg", "imgs/img109.jpg", "imgs/img110.jpg", "imgs/img111.jpg","imgs/img112.jpg","imgs/img113.jpg","imgs/img114.jpg","imgs/img115.jpg"]
     },
       {
-      title: "تنفيذ وتشطيب محل لشركه مودش للملابس الجاهزه بجمعيه الصديق",
-      titleEnglish: "Implementation and finishing of a store for Modish Readymade Clothes Company in Al-Siddiq Association",
-      images: ["imgs/img106.jpg", "imgs/img107.jpg", "imgs/img108.jpg", "imgs/img109.jpg", "imgs/img110.jpg", "imgs/img111.jpg","imgs/img112.jpg","imgs/img113.jpg","imgs/img114.jpg","imgs/img115.jpg"]
+      title: "استاند وياي فك وتركيب",
+      titleEnglish: "Astand Weyay fak W tarkib",
+      images: ["imgs/img57.jpg", "imgs/img58.jpg", "imgs/img59.jpg", "imgs/img60.jpg", "imgs/img61.jpg", "imgs/img62.jpg"]
+    },
+       {
+      title: "تنفيذ بوث لشركة كنيرجي للاستشارات الغذائية ",
+      titleEnglish: "Booth implementation for Kenergy Food Consulting Company",
+      images: ["imgs/img128.jpg","imgs/img129.jpg","imgs/img130.jpg","imgs/img131.jpg","imgs/img132.jpg","imgs/img133.jpg","imgs/img134.jpg"]
+    },
+    {
+      title: "معرض عطور",
+      titleEnglish: "Perfume exhibition",
+      images: ["imgs/img7.jpg", "imgs/img8.jpg", "imgs/img9.jpg", "imgs/img10.jpg"]
+    },
+    
+     {
+      title: "استاند الهيئه العامه للشباب 2019 ",
+      titleEnglish: "General Authority for Youth stand",
+      images: ["imgs/img135.jpg","imgs/img136.jpg","imgs/img137.jpg"]
+    },
+    {
+      title: "بوث طبي لشركة جمجوم",
+      titleEnglish: "Jamjoom Company's medical booth",
+      images: ["imgs/img11.jpg", "imgs/img12.jpg"]
+    },
+       {
+      title: "تنفيذ محل بروج للعطوربالجهراء مجمع المنار",
+      titleEnglish: "Implementation of the Burj Perfumes store in Jahra, Al-Manar Complex",
+      images: ["imgs/img159.jpg","imgs/img160.jpg","imgs/img161.jpg","imgs/img162.jpg","imgs/img163.jpg"]
+    },
+         {
+      title: "مداخل في الافنيوز وخيران مول",
+      titleEnglish: "Entrances to Avenues and Khiran Mall",
+      images: ["imgs/img46.jpg", "imgs/img47.jpg", "imgs/img48.jpg", "imgs/img49.jpg", "imgs/img50.jpg", "imgs/img51.jpg", "imgs/img52.jpg", "imgs/img53.jpg", "imgs/img54.jpg", "imgs/img55.jpg", "imgs/img56.jpg"]
+    },
+      
+     {
+      title: "تنفيذ بوث لشركه الاتصالات زين",
+      titleEnglish: "Booth implementation for Zain Telecom Company",
+      images: ["imgs/img164.jpg","imgs/img165.jpg","imgs/img166.jpg","imgs/img167.jpg","imgs/img168.jpg","imgs/img169.jpg","imgs/img170.jpg","imgs/img171.jpg","imgs/img172.jpg"]
+    },
+      {
+      title: "معارض مجوهرات ",
+      titleEnglish: "Jewelry exhibition countries",
+      images: ["imgs/img178.jpg","imgs/img179.jpg","imgs/img180.jpg","imgs/img181.jpg","imgs/img182.jpg","imgs/img183.jpg","imgs/img184.jpg","imgs/img185.jpg","imgs/img186.jpg","imgs/img187.jpg","imgs/img188.jpg","imgs/img189.jpg","imgs/img190.jpg","imgs/img191.jpg","imgs/img192.jpg","imgs/img193.jpg","imgs/img194.jpg","imgs/img195.jpg","imgs/img196.jpg","imgs/img197.jpg","imgs/img198.jpg","imgs/img199.jpg"]
+    },
+     {
+      title: "تشطيب  حضانه  بالجابريه",
+      titleEnglish: "Finishing a nursery in Jabriya",
+      images: ["imgs/img87.jpg", "imgs/img88.jpg", "imgs/img89.jpg", "imgs/img90.jpg", "imgs/img92.jpg", "imgs/img93.jpg","imgs/img94.jpg","imgs/img95.jpg","imgs/img96.jpg","imgs/img97.jpg"]
+    },
+     {
+      title: "عصير الضاحية",
+      titleEnglish: "Aasir Aldaahia",
+      images: ["imgs/img27.jpg", "imgs/img28.jpg", "imgs/img29.jpg", "imgs/img30.jpg"]
+    },
+     {
+      title: "كارى",
+      titleEnglish: "Cari",
+      images: ["imgs/img31.jpg", "imgs/img32.jpg", "imgs/img33.jpg", "imgs/img35.jpg", "imgs/img36.jpg", "imgs/img37.jpg"]
     },
      {
       title: "احتفالية ترولي علي مرور 15 عام ",
       titleEnglish: "Trolley 15th Anniversary Celebration",
       images: ["imgs/img121.jpg","imgs/img122.jpg","imgs/img123.jpg","imgs/img124.jpg","imgs/img125.jpg","imgs/img126.jpg","imgs/img127.jpg"]
     },
-     {
-      title: "تنفيذ بوث لشركة كنيرجي للاستشارات الغذائية ",
-      titleEnglish: "Booth implementation for Kenergy Food Consulting Company",
-      images: ["imgs/img128.jpg","imgs/img129.jpg","imgs/img130.jpg","imgs/img131.jpg","imgs/img132.jpg","imgs/img133.jpg","imgs/img134.jpg"]
-    },
-     {
-      title: "استاند الهيئه العامه للشباب 2019 ",
-      titleEnglish: "General Authority for Youth stand",
-      images: ["imgs/img135.jpg","imgs/img136.jpg","imgs/img137.jpg"]
-    },
-     {
-      title: "تشطيب جناح بالوفرة ",
-      titleEnglish: "Finishing a suite in Al Wafra",
-      images: ["imgs/img138.jpg","imgs/img139.jpg","imgs/img140.jpg","imgs/img141.jpg","imgs/img142.jpg","imgs/img143.jpg","imgs/img144.jpg","imgs/img145.jpg","imgs/img146.jpg"]
+    {
+      title:"دروبس",
+      titleEnglish:"Drops",
+      images:["imgs/img34.jpg","imgs/img210.jpg","imgs/img211.jpg"]
     },
      {
       title: "معرض المنتجات القطرية",
@@ -210,25 +227,12 @@ document.addEventListener('DOMContentLoaded', function() {
       images: ["imgs/img147.jpg","imgs/img148.jpg","imgs/img149.jpg","imgs/img150.jpg","imgs/img151.jpg","imgs/img152.jpg","imgs/img153.jpg","imgs/img154.jpg","imgs/img155.jpg","imgs/img156.jpg","imgs/img157.jpg","imgs/img158.jpg"]
     },
      {
-      title: "تنفيذ محل بروج للعطوربالجهراء مجمع المنار",
-      titleEnglish: "Implementation of the Burj Perfumes store in Jahra, Al-Manar Complex",
-      images: ["imgs/img159.jpg","imgs/img160.jpg","imgs/img161.jpg","imgs/img162.jpg","imgs/img163.jpg"]
-    },
-     {
-      title: "تنفيذ بوث لشركه الاتصالات زين",
-      titleEnglish: "Booth implementation for Zain Telecom Company",
-      images: ["imgs/img164.jpg","imgs/img165.jpg","imgs/img166.jpg","imgs/img167.jpg","imgs/img168.jpg","imgs/img169.jpg","imgs/img170.jpg","imgs/img171.jpg","imgs/img172.jpg"]
-    },
-     {
       title: "بوثات طلبات ",
       titleEnglish: "Talabaat booths",
       images: ["imgs/img173.jpg","imgs/img174.jpg","imgs/img175.jpg","imgs/img176.jpg","imgs/img177.jpg"]
     },
-     {
-      title: "دول معارض مجوهرات ",
-      titleEnglish: "Jewelry exhibition countries",
-      images: ["imgs/img178.jpg","imgs/img179.jpg","imgs/img180.jpg","imgs/img181.jpg","imgs/img182.jpg","imgs/img183.jpg","imgs/img184.jpg","imgs/img185.jpg","imgs/img186.jpg","imgs/img187.jpg","imgs/img188.jpg","imgs/img189.jpg","imgs/img190.jpg","imgs/img191.jpg","imgs/img192.jpg","imgs/img193.jpg","imgs/img194.jpg","imgs/img195.jpg","imgs/img196.jpg","imgs/img197.jpg","imgs/img198.jpg","imgs/img199.jpg"]
-    },
+    
+   
   ];
 const projectsContainer = document.getElementById('projectsContainer');
 const showMoreBtn = document.getElementById('showMoreBtn');
