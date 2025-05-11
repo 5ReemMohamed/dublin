@@ -6,8 +6,17 @@
   --bg-dark-alt: #30343d;
 }
 ::selection{
-  background-color: #dea069;
+  background-color: #aa703e;
   color: white;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: var(--primary-dark);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #e1a672;
+  border-radius: 9999px;
 }
 html{
   scroll-padding-top:135px ;
@@ -36,7 +45,6 @@ body {
   left: 0;
   width: 100%;
   z-index: 1030;
-  padding: .3rem 0;
   background-color: rgba(16, 16, 16, 0.7);
   backdrop-filter: blur(10px);
   overflow: hidden;
@@ -429,6 +437,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+ }
+ .contact .address::after{
+  width: 0;
  }
  .GMT{
   max-height: 100px; 

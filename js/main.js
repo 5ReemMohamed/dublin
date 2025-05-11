@@ -90,14 +90,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const projects = [
       {
-      title: "تشطيب محل دسمان للعطور بالجهراء المنار مول",
-      titleEnglish: "Finishing of Dasman Perfumes store in Jahra, Al Manar Mall",
-      images: ["imgs/img68.jpg", "imgs/img69.jpg", "imgs/img70.jpg", "imgs/img71.jpg"]
-    },
-      {
       title: "تنفيذ استوديو صباح الخير  ياكويت بوزارة الاعلام",
       titleEnglish: "Implementation of the Good Morning Kuwait Studio at the Ministry of Information",
       images: ["imgs/img72.jpg", "imgs/img73.jpg", "imgs/img74.jpg", "imgs/img75.jpg", "imgs/img76.jpg", "imgs/img77.jpg", "imgs/img78.jpg", "imgs/img79.jpg", "imgs/img80.jpg"]
+    },
+      {
+      title: "تشطيب محل دسمان للعطور بالجهراء المنار مول",
+      titleEnglish: "Finishing of Dasman Perfumes store in Jahra, Al Manar Mall",
+      images: ["imgs/img68.jpg", "imgs/img69.jpg", "imgs/img70.jpg", "imgs/img71.jpg"]
     },
      {
       title: "تشطيب دور في برج كيبكو",
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       title: "معرض عطور",
-      titleEnglish: "Perfume exhibition",
+      titleEnglish: "Perfume booth",
       images: ["imgs/img1.jpg", "imgs/img2.jpg", "imgs/img3.jpg", "imgs/img4.jpg","imgs/img5.jpg","imgs/img6.jpg"]
     },
       {
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       title: "معرض عطور",
-      titleEnglish: "Perfume exhibition",
+      titleEnglish: "Perfume booth",
       images: ["imgs/img7.jpg", "imgs/img8.jpg", "imgs/img9.jpg", "imgs/img10.jpg"]
     },
     
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
        {
       title: "تنفيذ محل بروج للعطوربالجهراء مجمع المنار",
-      titleEnglish: "Implementation of the Burj Perfumes store in Jahra, Al-Manar Complex",
+      titleEnglish: "Implementation of the Bruj Perfumes store in Jahra, Al-Manar Complex",
       images: ["imgs/img159.jpg","imgs/img160.jpg","imgs/img161.jpg","imgs/img162.jpg","imgs/img163.jpg"]
     },
          {
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
       {
       title: "معارض مجوهرات ",
-      titleEnglish: "Jewelry exhibition countries",
+      titleEnglish: "Jewelry booth",
       images: ["imgs/img178.jpg","imgs/img179.jpg","imgs/img180.jpg","imgs/img181.jpg","imgs/img182.jpg","imgs/img183.jpg","imgs/img184.jpg","imgs/img185.jpg","imgs/img186.jpg","imgs/img187.jpg","imgs/img188.jpg","imgs/img189.jpg","imgs/img190.jpg","imgs/img191.jpg","imgs/img192.jpg","imgs/img193.jpg","imgs/img194.jpg","imgs/img195.jpg","imgs/img196.jpg","imgs/img197.jpg","imgs/img198.jpg","imgs/img199.jpg"]
     },
      {
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
      {
       title: "معرض المنتجات القطرية",
-      titleEnglish: "Qatari Products Exhibition",
+      titleEnglish: "Qatari Products booth",
       images: ["imgs/img147.jpg","imgs/img148.jpg","imgs/img149.jpg","imgs/img150.jpg","imgs/img151.jpg","imgs/img152.jpg","imgs/img153.jpg","imgs/img154.jpg","imgs/img155.jpg","imgs/img156.jpg","imgs/img157.jpg","imgs/img158.jpg"]
     },
      {
@@ -247,7 +247,7 @@ function renderProjects(limit = projects.length) {
     col.innerHTML = `
       <div class="card text-center" data-index="${index}" style="cursor:pointer">
         <div>
-            <img src="${project.images[0]}" class=" project-image" alt="${project.title}">
+            <img src="${project.images[0]}" class=" project-image" alt="${project.title}" loading="lazy">
         </div>
         <div class="card-body">
           <h5 class="card-title" data-ar="${project.title}" data-en="${project.titleEnglish}">${project.title}</h5>
@@ -266,7 +266,7 @@ function showCarousel(images) {
   images.forEach((img, i) => {
     const div = document.createElement('div');
     div.className = `carousel-item${i === 0 ? " active" : ""}`;
-    div.innerHTML = `<img src="${img}" class="d-block w-100" alt="Slide ${i + 1}">`;
+    div.innerHTML = `<img src="${img}" class="d-block w-100" alt="Slide ${i + 1}" loading="lazy">`;
     carouselInner.appendChild(div);
   });
   projectModal.show();
